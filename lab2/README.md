@@ -57,10 +57,11 @@ awk '/^[^#]/ {print $10}' dns.log >> dns
 
 Собрать данные об источниках нежелательного трафика, в данном случае с github – [https://github.com/StevenBlack/hosts/blob/master/data/KADhosts/hosts](https://github.com/StevenBlack/hosts/tree/master/data)
 
-С репозитория взяты несколько файлов и объединенны в один файл hosts с помощью команды cat hosts2 >> hosts1
+``` bash
+curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts -o hosts
+```
 
-Вычленение из hosts1:
-cat hosts1 | cut -d " " -f2 >> hosts
+![image](https://github.com/Nosochekir/SAZND/assets/90778008/87dc0a5b-9a56-461b-b3f3-cb368ddfa0ae)
 
 ### Шаг 4
 
