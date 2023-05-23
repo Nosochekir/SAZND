@@ -58,7 +58,7 @@ awk '/^[^#]/ {print $10}' dns.log >> dns
 Собрать данные об источниках нежелательного трафика, в данном случае с github – [https://github.com/StevenBlack/hosts/blob/master/data/KADhosts/hosts](https://github.com/StevenBlack/hosts/tree/master/data)
 
 ``` bash
-curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts -o hosts
+curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts -o /home/kirill/hosts
 ```
 
 ![image](https://github.com/Nosochekir/SAZND/assets/90778008/87dc0a5b-9a56-461b-b3f3-cb368ddfa0ae)
