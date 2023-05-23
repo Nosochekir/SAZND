@@ -60,8 +60,7 @@ awk '/^[^#]/ {print $10}' dns.log >> dns
 ``` bash
 curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts -o /home/kirill/hosts
 ```
-
-![image](https://github.com/Nosochekir/SAZND/assets/90778008/87dc0a5b-9a56-461b-b3f3-cb368ddfa0ae)
+![image](https://github.com/Nosochekir/SAZND/assets/90778008/12a77f77-95ed-4c37-9e8a-e1fce9a509a6)
 
 ### Шаг 4
 
@@ -91,7 +90,7 @@ print(f"Процент нежелательного трафика: {round(len(c
 Подсчитали процент нежелательного трафика
 
 Получены результаты:
-СЮДА ВСТАВИТЬ ФОТОЧКУ
+![image](https://github.com/Nosochekir/SAZND/assets/90778008/a27ce379-f241-4eef-9779-2d4cb3a3e667)
 
 ## ️Вывод 
 
