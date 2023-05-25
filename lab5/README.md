@@ -16,7 +16,7 @@
 
 ### Шаг 2. Результат построения интеллект-карты
 
-
+![mind_map](https://github.com/Nosochekir/SAZND/blob/main/lab5/GOST.png)
 
 ## Оценка результата
 
