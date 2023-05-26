@@ -89,11 +89,11 @@ for domain in domains:
 
 #### 4. Импортируем сетевой трафик (файл dns.log, полученный в PR2) в OpenCTI
 
-![image](https://github.com/Nosochekir/SAZND/assets/90778008/f6749eea-b30f-4492-b022-3e05ab548815)
+![image](https://github.com/Nosochekir/SAZND/assets/90778008/f0ff347e-09be-447f-ba95-ce5f8f09dd3d)
 
 #### 5. Добавляем dns.log в рабочую область, переходим в раздел анализа и фильтруем трафик для просмотра нежелательного
 
-![image](https://github.com/Nosochekir/SAZND/assets/90778008/52b43e3f-5e05-4304-aea5-3bda05128003)
+![image](https://github.com/Nosochekir/SAZND/assets/90778008/8b237267-507d-4b56-9b80-bc1f7ad95090)
 
 ## Оценка результата
 
