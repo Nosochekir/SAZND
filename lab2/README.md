@@ -69,15 +69,30 @@ curl https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts -o /home/k
 
 Код:
 ```
-with open('dns', 'r') as f1, open('hosts', 'r') as f2:
-	dns_lines = f1.readlines()		
-	dns_l = [line for line in dns_lines if line.strip() and line.strip() != "-"]
-	hosts_lines = f2.readlines()
-	hosts_l = [line for line in hosts_lines if line.strip() and line.strip() != "-" and line.strip() != "#"]
-	dns_set = set(dns_l)
-	hosts_set = set(hosts_l)
-	common_lines = dns_set.intersection(hosts_set)
-print(f"Процент нежелательного трафика: {round(len(common_lines) / len(dns_l) * 100, 2)}%")
+bad_hosts = [] # нежелательные хосты
+with open('hosts') as file:
+    for line in file.readlines()[40:]:
+        if line[0] == '#':
+            continue
+        try:
+            bad_hosts.append(line.split()[1])
+        except IndexError:
+            continue
+        
+hosts = [] # все хосты
+with open('dns.log') as file:
+    for line in file.readlines():
+        if line[0] == '#':
+            continue
+        try:
+            hosts.append(line.split()[9])
+        except IndexError:
+            continue
+
+bad_count = len([host for host in hosts if host in bad_hosts])
+percentile = round(bad_count/len(hosts),3)*100
+print("Количество нежелательных хостов: {}.".format(str(bad_count)),
+"Процент нежелательного трафика: {}%.".format(str(percentile)),sep='\n')
 ```
 ## ️Оценка результата
 
