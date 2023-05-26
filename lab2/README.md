@@ -91,6 +91,7 @@ print(f"Процент нежелательного трафика: {round(len(c
 
 Получены результаты:
 
+![image](https://github.com/Nosochekir/SAZND/assets/90778008/a07f638d-bfe0-46eb-a7e2-9e80ab85197f)
 
 ## ️Вывод 
 
